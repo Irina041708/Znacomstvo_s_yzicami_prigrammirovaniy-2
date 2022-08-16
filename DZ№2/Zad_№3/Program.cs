@@ -16,4 +16,3 @@ if (int.TryParse(A, out a))
         if (a == 7) Console.WriteLine("Да");
         
     }
-
