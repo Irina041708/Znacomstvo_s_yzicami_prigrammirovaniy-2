@@ -6,7 +6,7 @@
 
 
 Console.Clear();
-int [] arr = {6,1,3,3,1,6}; 
+int [] arr = {1,2,8,2,1}; 
 
 // Напишем метод вывода заданного массива на консоль
 static void A(int[] array)
