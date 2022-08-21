@@ -6,11 +6,10 @@
 
 Console.Clear();
 int num = GetNumberFromUser("Введите целое число A: ","Ошибка ввода!");
-Console.WriteLine("а) сумма чисел от 1 до А");
-int sumNumbers = GetSumNumbers(num);
-Console.WriteLine($"\t{num} -> {sumNumbers}");
-Console.WriteLine("б) сумма цифр в числе А");
+
+Console.WriteLine("Cумма цифр в числе А");
 Console.WriteLine($"\t{num} -> {GetSumDigits(num)}");
+
 int GetNumberFromUser(string message, string errorMessage)
 {
     while(true)
@@ -23,17 +22,6 @@ int GetNumberFromUser(string message, string errorMessage)
     } 
  }
 
-// Возвращает сумму чисел от 1 до number
-int GetSumNumbers(int number)
-{
-    int sum = 0;
-    while(number > 0)
-    {
-        sum += number;
-        number--;
-    }
-    return sum;
-}
 // Возвращает сумму цифр в числе number
 int GetSumDigits(int number)
 {
