@@ -7,7 +7,7 @@ b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 /////////////////////////////////////////////////////////////////////////////////////////////
 Console.Clear();
 
-int[] array = GetArray(4, -10, 10);
+int[] array = GetArray(4, 0, 10);
 
 Console.Write("Получился массив коэффициентов: [");
 PrintArray(array);
@@ -22,7 +22,7 @@ int[] GetArray(int m, int minValue, int maxValue)
     int[] result = new int[m];
     for (int i = 0; i < m; i++)
     {
-        Console.Write($"Введите коэффициент {i + 1}:  ");
+        Console.Write($"Введите коэффициент от 0 до 10 {i + 1}:  ");
         result[i] = Convert.ToInt32(Console.ReadLine());
     }
 
