@@ -5,7 +5,7 @@
 
 Console.Clear();
 
-int[] array = GetArray(4, -12, -5); // Задаем массив 
+int[] array = GetArray(4, -12, 12); // Задаем массив 
 Console.Write($"[");
 Console.Write($" {String.Join(" ", array)}");
 Console.WriteLine($"]");
