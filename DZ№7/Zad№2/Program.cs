@@ -57,5 +57,5 @@ void GetArray2(int[,] inArray)
     if (rows <= inArray.GetUpperBound(0)+1 && colums <= inArray.GetUpperBound(1)+1)
         Console.Write($"Этот элемент = {inArray[(rows-1),(colums-1)]}");
     else
-        Console.Write("Такой позиции не существует.");
+        Console.Write("Такого числа в массиве нет.");
 }
