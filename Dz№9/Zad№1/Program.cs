@@ -6,22 +6,22 @@ M = 4; N = 8. -> "4, 6, 7, 8"
 */
 
 Console.WriteLine("Введите начальное число:");
-int start = int.Parse(Console.ReadLine() ?? "");
+int M = int.Parse(Console.ReadLine() ?? "");
 
 Console.WriteLine("Введите конечное число:");
-int end = int.Parse(Console.ReadLine() ?? "");
+int N = int.Parse(Console.ReadLine() ?? "");
 
-if (start < end)
+if (M < N)
 {
-    NumbersRec(end, start);
-    void NumbersRec(int start, int end)
+    NumbersRec(N, M);
+    void NumbersRec(int M, int N)
     {
-        if (end == start + 1) return;
+        if (N == M + 1) return;
         {
-            if (end == start) Console.Write(end);
-            else Console.Write(end + ",");
+            if (N == M) Console.Write(N);
+            else Console.Write(N + ",");
         }
-        NumbersRec(start, end + 1);
+        NumbersRec(M, N + 1);
     }
 }
 else Console.Write("Ошибка вода");
